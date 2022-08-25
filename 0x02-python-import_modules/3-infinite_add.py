@@ -1,12 +1,10 @@
 #!/usr/bin/python3
-from sys import argv
-
-
-def main():
-    sum = 0
-    for i in range(1, len(argv)):
-        sum += int(argv[i])
-    print(sum)
-
 if __name__ == "__main__":
-    main()
+    """ Add all arguments."""
+    import sys
+
+    result = 0
+
+    for i in range(len(sys.argv) - 1):
+        result += (int(sys.argv[i + 1]))
+    print("{:d}".format(result))
