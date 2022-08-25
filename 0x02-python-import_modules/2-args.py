@@ -14,4 +14,5 @@ def main():
         print('{}: {}'.format(i, argv[i]))
 
 if __name__ == "__main__":
+
     main()
